@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Demo Case">
+
+    <listeners>
+        <listener class-name="tr.com.demoApp.e2e.demoe2e.config.Listeners"/>
+    </listeners>
+
+
+
+    <test name="demo" group-by-instances="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tr.com.demoApp.e2e.demoe2e.module.HomePage_1"/>
+            <class name="tr.com.demoApp.e2e.demoe2e.module.CareersPage_2"/>
+            <class name="tr.com.demoApp.e2e.demoe2e.module.JobList_3"/>
+            <class name="tr.com.demoApp.e2e.demoe2e.module.CheckJobs_4"/>
+            <class name="tr.com.demoApp.e2e.demoe2e.module.Redirects_5"/>
+
+        </classes>
+      </test>
+  </suite>
